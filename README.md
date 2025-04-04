@@ -49,10 +49,10 @@ Understanding customer attrition is vital across industries. This project, initi
 4. **Predicting Customer Churn** using **Machine Learning (Random Forest)**.
 
 ## Key Metrics Used
-  •	Total Customers
-  •	Total Churn & Churn Rate
-  •	New Joiners
-  •	Churn Rate by Demographics, Payment Method, Tenure, and Contract Type
+   -	Total Customers
+   -	Total Churn & Churn Rate
+   -	New Joiners
+   -	Churn Rate by Demographics, Payment Method, Tenure, and Contract Type
 
 ## Project Workflow
 • ETL Process in SQL Server
