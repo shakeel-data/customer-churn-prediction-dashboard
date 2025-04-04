@@ -23,8 +23,9 @@ Understanding customer attrition is vital across industries. This project, initi
   -	New Joiners
  
 ## Data resources used
-- Data
+- Dataset
   - <a href="https://github.com/Shakeel-Data/Churn-prediction-Dashboard/blob/main/Customer%20data.csv">Data</a>
+  - <a href="https://github.com/Shakeel-Data/Churn-prediction-Dashboard/blob/main/Prediction%20data.xlsx">Data</a>
 - Queries
   - <a href="https://github.com/Shakeel-Data/Churn-prediction-Dashboard/blob/main/SQL%20queries.docx">Queries</a>
 
