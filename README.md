@@ -38,7 +38,7 @@ Understanding customer attrition is vital across industries. This project, initi
 ![Dashboard overview 2](https://github.com/user-attachments/assets/8de9bb5e-a779-4fe7-96a3-54215076590e)
 
 ## Project Objectives
-1. Visualizing and Analyzing Customer Data at different levels:
+1. **Visualizing and Analyzing Customer Data at different levels**:
   -	Demographic (Age, Gender, Marital Status)
   -	Geographic (State-wise churn rates)
   -	Payment & Account Information (Contract Type, Payment Method)
@@ -47,6 +47,17 @@ Understanding customer attrition is vital across industries. This project, initi
 2. **Identifying Churner Profiles** and areas for marketing interventions.
    
 4. **Predicting Customer Churn** using **Machine Learning (Random Forest)**.
+
+## Key Metrics Used
+  •	Total Customers
+  •	Total Churn & Churn Rate
+  •	New Joiners
+  •	Churn Rate by Demographics, Payment Method, Tenure, and Contract Type
+
+## Project Workflow
+• ETL Process in SQL Server
+  
+
 
 
 
