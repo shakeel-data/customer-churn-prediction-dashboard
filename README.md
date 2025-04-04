@@ -44,9 +44,9 @@ Understanding customer attrition is vital across industries. This project, initi
   -	Payment & Account Information (Contract Type, Payment Method)
   -	Services Used (Internet, Security, Billing, etc.)
 
-2. Identifying Churner Profiles and areas for marketing interventions.
+2. **Identifying Churner Profiles** and areas for marketing interventions.
    
-4. Predicting Customer Churn using Machine Learning (Random Forest).
+4. **Predicting Customer Churn** using **Machine Learning (Random Forest)**.
 
 
 
