@@ -11,7 +11,7 @@ This project focuses on Customer Churn Analysis for a telecom firm, utilizes SQL
 - Dataset
   - <a href="https://github.com/Shakeel-Data/Churn-prediction-Dashboard/blob/main/Customer%20data.csv">csv</a>
   - <a href="https://github.com/Shakeel-Data/Churn-prediction-Dashboard/blob/main/Prediction%20data.xlsx">xlsx</a>
-- Queries
+- SQL
   - <a href="https://github.com/Shakeel-Data/Churn-prediction-Dashboard/blob/main/SQL%20queries.docx">queries</a>
 - Power query
   - <a href="https://github.com/Shakeel-Data/Churn-prediction-Dashboard/blob/main/Power%20Query%20Transformation%20and%20Measures">DAX</a>
