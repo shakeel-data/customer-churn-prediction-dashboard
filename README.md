@@ -4,10 +4,10 @@ Customer churn is one of the most significant challenges facing modern businesse
 ## Project Overview
 This project focuses on Customer Churn Analysis for a telecom firm, utilizes SQL for ETL, leveraging Power BI for data visualization and Machine Learning (Random Forest) to identify churn patterns, predict future churners, and provide actionable insights. While the project is specific to telecom, its methodologies can be applied across industries such as retail, finance, and healthcare to enhance customer retention strategies.
 
-# Relevant Sectors & Stakeholders
+## Relevant Sectors & Stakeholders
 Understanding customer attrition is vital across industries. This project, initially designed for the telecom sector, provides a scalable framework for churn analysis applicable to finance, retail, and healthcare. By leveraging data analytics and predictive modeling, businesses can proactively address churn, optimize retention strategies, and enhance customer lifetime value.
 
-# Project Target
+## Project Target
 - Create an entire ETL process in a database & a Power BI dashboard to utilize the Customer Data and achieve below goals:
   -	Visualize & Analyse Customer Data at below levels
   - Demographic
@@ -21,7 +21,15 @@ Understanding customer attrition is vital across industries. This project, initi
   -	Total Customers
   -	Total Churn & Churn Rate
   -	New Joiners
+ 
+## Data resources used
+- Data
+  - <a href="https://github.com/Shakeel-Data/Churn-prediction-Dashboard/blob/main/Customer%20data.csv">Data</a>
+- Queries
+  - <a href="https://github.com/Shakeel-Data/Churn-prediction-Dashboard/blob/main/SQL%20queries.docx">Queries</a>
 
-# STEP 1 – ETL Process in SQL Server
-- Download SSMS
-- Creating Database
+# Dashboard
+![Dashboard overview ](https://github.com/user-attachments/assets/6f467caa-e353-479c-a5b3-85beb3499fa3)
+![Dashboard overview 2](https://github.com/user-attachments/assets/8de9bb5e-a779-4fe7-96a3-54215076590e)
+
+
