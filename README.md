@@ -31,10 +31,23 @@ Understanding customer attrition is vital across industries. This project, initi
 - Power query
   - <a href="https://github.com/Shakeel-Data/Churn-prediction-Dashboard/blob/main/Power%20Query%20Transformation%20and%20Measures">DAX</a>
 - Python
-  - <a href="https://github.com/Shakeel-Data/Churn-prediction-Dashboard/blob/main/Python%20Codes%20for%20Machine%20learning%20-%20Random%20Forest.docx"codes</a>
+  - <a href="https://github.com/Shakeel-Data/Churn-prediction-Dashboard/blob/main/Python%20Codes%20for%20Machine%20learning%20-%20Random%20Forest.docx">codes</a>
 
 # Dashboard
 ![Dashboard overview ](https://github.com/user-attachments/assets/6f467caa-e353-479c-a5b3-85beb3499fa3)
 ![Dashboard overview 2](https://github.com/user-attachments/assets/8de9bb5e-a779-4fe7-96a3-54215076590e)
+
+## Project Objectives
+1. Visualizing and Analyzing Customer Data at different levels:
+  -	Demographic (Age, Gender, Marital Status)
+  -	Geographic (State-wise churn rates)
+  -	Payment & Account Information (Contract Type, Payment Method)
+  -	Services Used (Internet, Security, Billing, etc.)
+
+2. Identifying Churner Profiles and areas for marketing interventions.
+   
+4. Predicting Customer Churn using Machine Learning (Random Forest).
+
+
 
 
