@@ -38,15 +38,15 @@ Understanding customer attrition is vital across industries. This project, initi
 ![Dashboard overview 2](https://github.com/user-attachments/assets/8de9bb5e-a779-4fe7-96a3-54215076590e)
 
 ## Project Objectives
-1. **Visualizing and Analyzing Customer Data at different levels**:
+- **Visualizing and Analyzing Customer Data at different levels**:
   -	Demographic (Age, Gender, Marital Status)
   -	Geographic (State-wise churn rates)
   -	Payment & Account Information (Contract Type, Payment Method)
   -	Services Used (Internet, Security, Billing, etc.)
 
-2. **Identifying Churner Profiles** and areas for marketing interventions.
+-  **Identifying Churner Profiles** and areas for marketing interventions.
    
-4. **Predicting Customer Churn** using **Machine Learning (Random Forest)**.
+-  **Predicting Customer Churn** using **Machine Learning (Random Forest)**.
 
 ## Key Metrics Used
    -	Total Customers
@@ -55,8 +55,61 @@ Understanding customer attrition is vital across industries. This project, initi
    -	Churn Rate by Demographics, Payment Method, Tenure, and Contract Type
 
 ## Project Workflow
-• ETL Process in SQL Server
+1. ETL Process in SQL Server
+   -	Created a **database and imported CSV files** into SQL Server using the Import Wizard.
+   -	Performed **data exploration** to check distinct values and nulls.
+   -	Cleaned data by **removing null values** and inserted it into the **production table**.
+   -	Created **views in SQL Server** to integrate with Power BI.
+
+2. Power BI Data Transformation
+   -  Added new calculated columns in **prod_Churn**.
+   -	Created reference tables for:
+      -	**Age Group Mapping**
+      -	**Tenure Group Mapping**
+      -	**Service Categories**
+
+3. Power BI Measures & Visualization
+   -	Developed **DAX measures** for key performance indicators (KPIs).
+   -	Designed interactive dashboards to **analyze churn patterns** across various segments
+
+4. Customer Churn Prediction Using Machine Learning (Random Forest)
+   -	**Data Preparation** for the ML model.
+   -	Installed necessary **Python libraries**.
+   -	Imported data and performed **preprocessing**.
+   -	Trained a **Random Forest Model** to predict churn.
+   -	Used the model to **predict future churners**.
   
+5. Power BI Visualization of Predicted Data
+   -	Imported **predicted churn data** into SQL Server and Power BI.
+   -	Created additional **DAX measures** to analyze predicted results.
+   -	Designed a Churn Prediction Dashboard to visualize potential **churners and customer risk factors**.
+
+## Business Impact
+   •	Proactive Customer Retention: Identifying high-risk customers allows businesses to take preventive measures to reduce churn.
+   •	Data-Driven Decision Making: Visualization and predictive analytics help tailor marketing strategies.
+   •	Improved Revenue Management: Understanding churn trends can enhance customer loyalty programs and pricing models.
+
+## Technology Stack Used
+   •	SQL Server (Database & ETL)
+   •  DAX (Power BI Calculations)
+   •	Power BI (Data Transformation & Visualization)
+   •	Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn) 
+   •	Machine Learning algorithm (RANDOM FOREST)
+
+## Conclusion & Next Steps
+This project demonstrates the power of ETL processes, business intelligence, and machine learning in understanding customer churn. By integrating SQL, Power BI, and Machine Learning, it provides a comprehensive solution for customer retention strategies.The methodology and tools used here can be extended to various industries to drive data-driven decisions and enhance customer experience.
+
+  -	Implement personalized retention offers for high-risk customers.
+  -	Improve contract structures to encourage long-term commitments.
+  -	Deploy real-time monitoring and alerts for early churn indicators.
+
+
+
+
+
+
+   
+
 
 
 
