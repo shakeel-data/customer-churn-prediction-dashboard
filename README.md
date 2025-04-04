@@ -69,7 +69,7 @@ This project focuses on Customer Churn Analysis for a telecom firm, utilizes SQL
    -	Created additional **DAX measures** to analyze predicted results.
    -	Designed a Churn Prediction Dashboard to visualize potential **churners and customer risk factors**.
 
-## Business Impact
+## Business Outcomes
    -	Proactive Customer Retention : Identifying high-risk customers allows businesses to take preventive measures to reduce churn.
    -	Data-Driven Decision Making  : Visualization and predictive analytics help tailor marketing strategies.
    -	Improved Revenue Management  : Understanding churn trends can enhance customer loyalty programs and pricing models.
