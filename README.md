@@ -90,11 +90,11 @@ Understanding customer attrition is vital across industries. This project, initi
    •	Improved Revenue Management: Understanding churn trends can enhance customer loyalty programs and pricing models.
 
 ## Technology Stack Used
-   •	SQL Server (Database & ETL)
-   •  DAX (Power BI Calculations)
-   •	Power BI (Data Transformation & Visualization)
-   •	Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn) 
-   •	Machine Learning algorithm (RANDOM FOREST)
+   *	SQL Server (Database & ETL)
+   *  DAX (Power BI Calculations)
+   *	Power BI (Data Transformation & Visualization)
+   *	Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn) 
+   *	Machine Learning algorithm (RANDOM FOREST)
 
 ## Conclusion & Next Steps
 This project demonstrates the power of ETL processes, business intelligence, and machine learning in understanding customer churn. By integrating SQL, Power BI, and Machine Learning, it provides a comprehensive solution for customer retention strategies.The methodology and tools used here can be extended to various industries to drive data-driven decisions and enhance customer experience.
