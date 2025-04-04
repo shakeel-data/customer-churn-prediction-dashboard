@@ -85,20 +85,21 @@ Understanding customer attrition is vital across industries. This project, initi
    -	Designed a Churn Prediction Dashboard to visualize potential **churners and customer risk factors**.
 
 ## Business Impact
-   •	Proactive Customer Retention: Identifying high-risk customers allows businesses to take preventive measures to reduce churn.
-   •	Data-Driven Decision Making: Visualization and predictive analytics help tailor marketing strategies.
-   •	Improved Revenue Management: Understanding churn trends can enhance customer loyalty programs and pricing models.
+   -	Proactive Customer Retention: Identifying high-risk customers allows businesses to take preventive measures to reduce churn.
+   -	Data-Driven Decision Making: Visualization and predictive analytics help tailor marketing strategies.
+   -	Improved Revenue Management: Understanding churn trends can enhance customer loyalty programs and pricing models.
 
 ## Technology Stack Used
    *	SQL Server (Database & ETL)
    *  DAX (Power BI Calculations)
    *	Power BI (Data Transformation & Visualization)
-   *	Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn) 
+   *	Python (Pandas, NumPy, Matplotlib) 
    *	Machine Learning algorithm (RANDOM FOREST)
 
 ## Conclusion & Next Steps
-This project demonstrates the power of ETL processes, business intelligence, and machine learning in understanding customer churn. By integrating SQL, Power BI, and Machine Learning, it provides a comprehensive solution for customer retention strategies.The methodology and tools used here can be extended to various industries to drive data-driven decisions and enhance customer experience.
+This Churn Analysis Dashboard provides a data-driven foundation for understanding customer attrition and its underlying causes. The insights reveal critical risk factors related to demographics, service preferences, contract types, and regional trends. Addressing these challenges through proactive retention strategies, service enhancements, and personalized engagement can significantly improve customer loyalty and reduce churn. By integrating SQL, Power BI, and Machine Learning, it provides a comprehensive solution for customer retention strategies.The methodology and tools used here can be extended to various industries to drive data-driven decisions and enhance customer experience.
 
+This project underscores the value of data-driven decision-making in driving business growth. Future developments may focus on:
   -	Implement personalized retention offers for high-risk customers.
   -	Improve contract structures to encourage long-term commitments.
   -	Deploy real-time monitoring and alerts for early churn indicators.
