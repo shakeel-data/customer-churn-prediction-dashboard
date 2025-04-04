@@ -85,9 +85,9 @@ Understanding customer attrition is vital across industries. This project, initi
    -	Designed a Churn Prediction Dashboard to visualize potential **churners and customer risk factors**.
 
 ## Business Impact
-   -	Proactive Customer Retention: Identifying high-risk customers allows businesses to take preventive measures to reduce churn.
-   -	Data-Driven Decision Making: Visualization and predictive analytics help tailor marketing strategies.
-   -	Improved Revenue Management: Understanding churn trends can enhance customer loyalty programs and pricing models.
+   -	Proactive Customer Retention : Identifying high-risk customers allows businesses to take preventive measures to reduce churn.
+   -	Data-Driven Decision Making  : Visualization and predictive analytics help tailor marketing strategies.
+   -	Improved Revenue Management  : Understanding churn trends can enhance customer loyalty programs and pricing models.
 
 ## Technology Stack Used
    *	SQL Server (Database & ETL)
