@@ -75,11 +75,11 @@ This project focuses on Customer Churn Analysis for a telecom firm. It utilizes 
    -	Improved Revenue Management  : Understanding churn trends can enhance customer loyalty programs and pricing models.
 
 ## Software & Frameworks
-   *	SQL Server (Database & ETL)
-   *  DAX (Power BI Calculations)
-   *	Power BI (Data Transformation & Visualization)
-   *	Python (Pandas, NumPy, Matplotlib) 
-   *	Machine Learning algorithm (RANDOM FOREST)
+   *	**SQL** Server (Database & ETL)
+   * **DAX** (Power BI Calculations)
+   *	**Power BI** (Data Transformation & Visualization)
+   *	**Python** (Pandas, NumPy, Matplotlib) 
+   *	**Machine Learning algorithm** (RANDOM FOREST)
 
 ## Conclusion & Next Steps
 This Churn Analysis Dashboard provides a data-driven foundation for understanding customer attrition and its underlying causes. The insights reveal critical risk factors related to demographics, service preferences, contract types, and regional trends. Addressing these challenges through proactive retention strategies, service enhancements, and personalized engagement can significantly improve customer loyalty and reduce churn. By integrating SQL, Power BI, and Machine Learning, it provides a comprehensive solution for customer retention strategies.The methodology and tools used here can be extended to various industries to drive data-driven decisions and enhance customer experience.
