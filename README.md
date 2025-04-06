@@ -39,7 +39,7 @@ This project focuses on Customer Churn Analysis for a telecom firm. It utilizes 
 -	**New Joiners**
 -	**Churn Rate by Demographics, Payment Method, Tenure, and Contract Type**
 
-## ⚙️ Project Workflow
+## 🪜 Project Workflow
 ### 1. ETL Process in SQL Server
    -	Created a **database and imported CSV files** into SQL Server using the Import Wizard.
    -	Performed **data exploration** to check distinct values and nulls.
