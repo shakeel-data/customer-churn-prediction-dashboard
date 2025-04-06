@@ -75,7 +75,7 @@ This project focuses on Customer Churn Analysis for a telecom firm. It utilizes 
    -	Improved Revenue Management  : Understanding churn trends can enhance customer loyalty programs and pricing models.
 
 ## Software & Frameworks
-   *	**SQL** Server (Database & ETL)
+   *	**SQL server** (Database & ETL)
    * **DAX** (Power BI Calculations)
    *	**Power BI** (Data Transformation & Visualization)
    *	**Python** (Pandas, NumPy, Matplotlib) 
