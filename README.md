@@ -34,52 +34,52 @@ This project focuses on Customer Churn Analysis for a telecom firm. It utilizes 
 -  **Predicting Customer Churn** using **Machine Learning (Random Forest)**.
 
 ## Key Metrics Used
-   -	**Total Customers**
-   -	**Total Churn & Churn Rate**
-   -	**New Joiners**
-   -	**Churn Rate by Demographics, Payment Method, Tenure, and Contract Type**
+-	**Total Customers**
+-	**Total Churn & Churn Rate**
+-	**New Joiners**
+-	**Churn Rate by Demographics, Payment Method, Tenure, and Contract Type**
 
 ## Project Workflow
-1. ETL Process in SQL Server
+### 1. ETL Process in SQL Server
    -	Created a **database and imported CSV files** into SQL Server using the Import Wizard.
    -	Performed **data exploration** to check distinct values and nulls.
    -	Cleaned data by **removing null values** and inserted it into the **production table**.
    -	Created **views in SQL Server** to integrate with Power BI.
 
-2. Power BI Data Transformation
-   -  Added new calculated columns in **prod_Churn**.
-   -	Created reference tables for:
+### 2. Power BI Data Transformation
+-  Added new calculated columns in **prod_Churn**.
+-	Created reference tables for:
       -	**Age Group Mapping**
       -	**Tenure Group Mapping**
       -	**Service Categories**
 
-3. Power BI Measures & Visualization
-   -	Developed **DAX measures** for key performance indicators (KPIs).
-   -	Designed interactive dashboards to **analyze churn patterns** across various segments
+### 3. Power BI Measures & Visualization
+-	Developed **DAX measures** for key performance indicators (KPIs).
+-	Designed interactive dashboards to **analyze churn patterns** across various segments
 
-4. Customer Churn Prediction Using Machine Learning (Random Forest)
-   -	**Data Preparation** for the ML model.
-   -	Installed necessary **Python libraries**.
-   -	Imported data and performed **preprocessing**.
-   -	Trained a **Random Forest Model** to predict churn.
-   -	Used the model to **predict future churners**.
+### 4. Customer Churn Prediction Using Machine Learning (Random Forest)
+-	**Data Preparation** for the ML model.
+-	Installed necessary **Python libraries**.
+-	Imported data and performed **preprocessing**.
+-	Trained a **Random Forest Model** to predict churn.
+-	Used the model to **predict future churners**.
   
-5. Power BI Visualization of Predicted Data
-   -	Imported **predicted churn data** into SQL Server and Power BI.
-   -	Created additional **DAX measures** to analyze predicted results.
-   -	Designed a Churn Prediction Dashboard to visualize potential **churners and customer risk factors**.
+### 5. Power BI Visualization of Predicted Data
+-	Imported **predicted churn data** into SQL Server and Power BI.
+-	Created additional **DAX measures** to analyze predicted results.
+-	Designed a Churn Prediction Dashboard to visualize potential **churners and customer risk factors**.
 
 ## Business Outcomes
-   -	Proactive Customer Retention : Identifying high-risk customers allows businesses to take preventive measures to reduce churn.
-   -	Data-Driven Decision Making  : Visualization and predictive analytics help tailor marketing strategies.
-   -	Improved Revenue Management  : Understanding churn trends can enhance customer loyalty programs and pricing models.
+-	**Proactive Customer Retention** : Identifying high-risk customers allows businesses to take preventive measures to reduce churn.
+-	**Data-Driven Decision Making**  : Visualization and predictive analytics help tailor marketing strategies.
+-	**Improved Revenue Management**  : Understanding churn trends can enhance customer loyalty programs and pricing models.
 
 ## Software & Frameworks
-   *	**SQL** **server** (Database & ETL)
-   * **DAX** (Power BI Calculations)
-   *	**Power BI** (Data Transformation & Visualization)
-   *	**Python** (Pandas, NumPy, Matplotlib) 
-   *	**Machine Learning algorithm** (RANDOM FOREST)
+- **SQL** **server** (Database & ETL)
+- **DAX** (Power BI Calculations)
+- **Power BI** (Data Transformation & Visualization)
+- **Python** (Pandas, NumPy, Matplotlib) 
+- **Machine Learning Algorithm** (RANDOM FOREST)
 
 ## Conclusion & Next Steps
 This Churn Analysis Dashboard provides a data-driven foundation for understanding customer attrition and its underlying causes. The insights reveal critical risk factors related to demographics, service preferences, contract types, and regional trends. Addressing these challenges through proactive retention strategies, service enhancements, and personalized engagement can significantly improve customer loyalty and reduce churn. By integrating SQL, Power BI, and Machine Learning, it provides a comprehensive solution for customer retention strategies.The methodology and tools used here can be extended to various industries to drive data-driven decisions and enhance customer experience.
