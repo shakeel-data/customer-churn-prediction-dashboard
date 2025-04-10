@@ -19,7 +19,9 @@ This project focuses on Customer Churn Analysis for a telecom firm. It utilizes 
   - <a href="https://github.com/Shakeel-Data/Churn-prediction-Dashboard/blob/main/Python%20Codes%20for%20Machine%20learning%20-%20Random%20Forest.docx">codes</a>
 
 # 🪟 Dashboard
-![image](https://github.com/user-attachments/assets/868cbf85-ac09-412d-a183-b7f2857d61f6)
+![Dashboard overview ](https://github.com/user-attachments/assets/a89377ad-0eb9-424f-8f1b-5aa93121f435)
+![Dashboard overview 2](https://github.com/user-attachments/assets/bb63d774-5693-4f5b-9ba1-8eb34347cb4e)
+
 
 ## 🎯 Project Goals
 - **Visualizing and Analyzing Customer Data at different levels**:
