@@ -239,26 +239,29 @@ Create View vw_JoinData as
 	select * from prod_Churn where Customer_Status = 'Joined'
 
 ```
+### 2. Data Integration
+- After completing **data cleaning and exploration** using T-SQL in Microsoft SQL Server, the final dataset was stored as a saved **query/view in the database**.
+- This ensured a live, structured connection when **importing the data into Power BI using the native SQL Server connector**, maintaining **data accuracy and consistency** throughout the dashboard development process.
 
-### 2. Power BI Data Transformation
+### 3. Power BI Data Transformation
 -  Added new calculated columns in **prod_Churn**.
 -	Created reference tables for:
       -	**Age Group Mapping**
       -	**Tenure Group Mapping**
       -	**Service Categories**
 
-### 3. Power BI Measures & Visualization
+### 4. Power BI Measures & Visualization
 -	Developed **DAX measures** for key performance indicators (KPIs).
 -	Designed interactive dashboards to **analyze churn patterns** across various segments
 
-### 4. Customer Churn Prediction Using Machine Learning (Random Forest)
+### 5. Customer Churn Prediction Using Machine Learning (Random Forest)
 -	**Data Preparation** for the ML model.
 -	Installed necessary **Python libraries**.
 -	Imported data and performed **preprocessing**.
 -	Trained a **Random Forest Model** to predict churn.
 -	Used the model to **predict future churners**.
   
-### 5. Power BI Visualization of Predicted Data
+### 6. Power BI Visualization of Predicted Data
 -	Imported **predicted churn data** into SQL Server and Power BI.
 -	Created additional **DAX measures** to analyze predicted results.
 -	Designed a Churn Prediction Dashboard to visualize potential **churners and customer risk factors**.
