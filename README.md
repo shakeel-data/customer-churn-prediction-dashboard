@@ -1,4 +1,4 @@
-# 👥 Data-Driven Customer Churn Insights Project | • SQL • Power BI • Machine Learning
+# 👥 Data-Driven Customer Churn Insights Project | SQL + Power BI + Machine Learning
 Customer churn is one of the most significant challenges facing modern businesses. As markets become increasingly saturated, understanding why customers leave—and more importantly, how to retain them—has never been more critical. Churn analysis provides a data-driven approach to tackling this issue by uncovering behavioural trends and service-related factors that influence customer decisions. By integrating predictive modelling and actionable insights, organizations can shift from reactive responses to proactive engagement, ensuring stronger customer relationships and improved business outcomes.
 
 ## 🏢 Relevant Sectors & Stakeholders
