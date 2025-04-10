@@ -47,7 +47,7 @@ This project focuses on Customer Churn Analysis for a telecom firm. It utilizes 
    -	Created **views in SQL Server** to integrate with Power BI.
 
 ```sql
-                          ---🟢 Data Exploration ---
+                                     ---🟢 Data Exploration ---
 
 -- Checking distinct values
 
@@ -78,7 +78,7 @@ Order by Percentage desc
 ![image](https://github.com/user-attachments/assets/c36183c3-639a-412a-90c1-80c6396399cc)
 
 ```sql
-                            ---🟡 Data analysis ---
+                                      ---🟡 Data analysis ---
 
 -- Checking nulls
 
@@ -152,7 +152,7 @@ GROUP BY Payment_Method;
 
 ```sql
 
-                          ---🔴 Data exploratory ---
+                                        ---🔴 Data exploratory ---
 
 CREATE TABLE prod_Churn
 
