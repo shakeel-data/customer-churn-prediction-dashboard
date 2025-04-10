@@ -19,8 +19,7 @@ This project focuses on Customer Churn Analysis for a telecom firm. It utilizes 
   - <a href="https://github.com/Shakeel-Data/Churn-prediction-Dashboard/blob/main/Python%20Codes%20for%20Machine%20learning%20-%20Random%20Forest.docx">codes</a>
 
 # 🪟 Dashboard
-![Dashboard overview ](https://github.com/user-attachments/assets/6f467caa-e353-479c-a5b3-85beb3499fa3)
-![Dashboard overview 2](https://github.com/user-attachments/assets/8de9bb5e-a779-4fe7-96a3-54215076590e)
+![image](https://github.com/user-attachments/assets/868cbf85-ac09-412d-a183-b7f2857d61f6)
 
 ## 🎯 Project Goals
 - **Visualizing and Analyzing Customer Data at different levels**:
@@ -271,7 +270,7 @@ Create View vw_JoinData as
 - **SQL** **server** (Database & ETL)
 - **DAX** (Power BI Calculations)
 - **Power BI Desktop** (Data Transformation & Visualization)
-- **Python** (Pandas, NumPy, Matplotlib) 
+- **Python** (Pandas, NumPy, Matplotlib, Scikit-learn) 
 - **Machine Learning Algorithm** (Random Forest)
 
 ## 🔚➡️ Conclusion & Next Steps
