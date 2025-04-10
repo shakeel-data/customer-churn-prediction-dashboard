@@ -77,7 +77,7 @@ This project focuses on Customer Churn Analysis for a telecom firm. It utilizes 
 ## ⚙️ Software & Frameworks
 - **SQL** **server** (Database & ETL)
 - **DAX** (Power BI Calculations)
-- **Power BI** (Data Transformation & Visualization)
+- **Power BI Desktop** (Data Transformation & Visualization)
 - **Python** (Pandas, NumPy, Matplotlib) 
 - **Machine Learning Algorithm** (Random Forest)
 
