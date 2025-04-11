@@ -478,6 +478,7 @@ original_data.to_csv(r"C:\yourpath\Predictions.csv", index=False)
 - **SQL** **server** (Database & ETL)
 - **DAX** (Power BI Calculations)
 - **Power BI Desktop** (Data Transformation & Visualization)
+- **Jupyter Notebook** (Interactive environment for coding and presenting analysis)
 - **Python** (Pandas, NumPy, Matplotlib, Scikit-learn) 
 - **Machine Learning Algorithm** (Random Forest)
 
