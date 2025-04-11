@@ -252,17 +252,17 @@ Create View vw_JoinData as
 
 ### 4. Power BI Measures & Visualization
 -	Developed **DAX measures** for key performance indicators (KPIs).
--	Designed interactive dashboards to **analyze churn patterns** across various segments
--	
+-	Designed interactive dashboards to **analyze churn patterns** across various segments	
 
 ```dax
 
                                      --- Power query Trransformation
 
 --Add a new column in prod_Churn
-Churn Status = if [Customer_Status] = "Churned" then 1 else 0
-Change Churn Status data type to numbers
-Monthly Charge Range = if [Monthly_Charge] < 20 then "< 20" else if [Monthly_Charge] < 50 then "20-50" else if [Monthly_Charge] < 100 then "50-100" else "> 100"
+
+- Churn Status = if [Customer_Status] = "Churned" then 1 else 0
+- Change Churn Status data type to numbers
+- Monthly Charge Range = if [Monthly_Charge] < 20 then "< 20" else if [Monthly_Charge] < 50 then "20-50" else if [Monthly_Charge] < 100 then "50-100" else "> 100"
 
 
 
