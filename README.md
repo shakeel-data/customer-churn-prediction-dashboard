@@ -230,7 +230,7 @@ ORDER BY Count DESC;
 
 ```sql
 
---- Creating views for Power BI
+-- Creating views for Power BI
 
 Create View vw_ChurnData as
 	select * from prod_Churn where Customer_Status In ('Churned', 'Stayed')
@@ -252,22 +252,92 @@ Create View vw_JoinData as
 
 ### 4. Power BI Measures & Visualization
 -	Developed **DAX measures** for key performance indicators (KPIs).
--	Designed interactive dashboards to **analyze churn patterns** across various segments	
+-	Designed interactive dashboards to **analyze churn patterns** across various segments
+
+### power Query Transformations 
 
 ```dax
 
-                                     --- Power query Trransformation
+-- Add a new column in prod_Churn
 
---Add a new column in prod_Churn
-
-- Churn Status = if [Customer_Status] = "Churned" then 1 else 0
-- Change Churn Status data type to numbers
-- Monthly Charge Range = if [Monthly_Charge] < 20 then "< 20" else if [Monthly_Charge] < 50 then "20-50" else if [Monthly_Charge] < 100 then "50-100" else "> 100"
-
-
-
+Churn Status = if [Customer_Status] = "Churned" then 1 else 0
 
 ```
+
+```dax
+
+-- Change Churn Status data type to numbers
+
+Monthly Charge Range = if [Monthly_Charge] < 20 then "< 20" else if [Monthly_Charge] < 50 then "20-50" else if [Monthly_Charge] < 100 then "50-100" else "> 100"
+
+```
+
+### Creating a new table reference for mapping _age_group
+
+```dax
+
+- Keep only Age column and remove duplicates
+Age Group = if [Age] < 20 then "< 20" else if [Age] < 36 then "20 - 35" else if [Age] < 51 then "36 - 50" else "> 50"
+
+```
+
+```dax
+
+AgeGrpSorting = if [Age Group] = "< 20" then 1 else if [Age Group] = "20 - 35" then 2 else if [Age Group] = "36 - 50" then 3 else 4
+-- Change data type of AgeGrpSorting
+
+```
+
+### Creating a new table reference for prod_service
+- Unpivot services columns
+- Rename Column – 
+a. Attribute >> Services 
+b. Value >> Status
+
+
+### Summary page Measures
+
+```dax
+
+Total Customers = Count(prod_Churn[Customer_ID])
+
+```
+
+```dax
+
+New Joiners = CALCULATE(COUNT(prod_Churn[Customer_ID]), prod_Churn[Customer_Status] = "Joined")
+
+```
+
+```dax
+
+Total Churn = SUM(prod_Churn[Churn Status])
+
+```
+
+```dax
+
+Churn Rate = [Total Churn] / [Total Customers]
+
+```
+
+### Churn Prediction -  page Measures
+
+```dax
+
+Count Predicted Churner = COUNT(Predictions[Customer_ID]) + 0
+
+```
+
+```dax
+
+Title Predicted Churners = "COUNT OF PREDICTED CHURNERS : " & COUNT(Predictions[Customer_ID])
+
+```
+
+
+
+
 
 ### 5. Customer Churn Prediction Using Machine Learning (Random Forest)
 -	**Data Preparation** for the ML model.
