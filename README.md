@@ -257,15 +257,12 @@ Create View vw_JoinData as
 ### power Query Transformations 
 
 ```dax
-
 -- Add a new column in prod_Churn
 
 Churn Status = if [Customer_Status] = "Churned" then 1 else 0
-
 ```
 
 ```dax
-
 -- Change Churn Status data type to numbers
 
 Monthly Charge Range = if [Monthly_Charge] < 20 then "< 20" else if [Monthly_Charge] < 50 then "20-50" else if [Monthly_Charge] < 100 then "50-100" else "> 100"
