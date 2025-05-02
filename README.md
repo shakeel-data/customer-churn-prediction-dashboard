@@ -3,7 +3,7 @@
 
 Customer churn is one of the most significant challenges facing modern businesses. As markets become increasingly saturated, understanding why customers leave and more importantly, how to retain them has never been more critical. Churn analysis provides a data-driven approach to tackling this issue by uncovering behavioural trends and service-related factors that influence customer decisions. By integrating predictive modelling and actionable insights, organizations can shift from reactive responses to proactive engagement, ensuring stronger customer relationships and improved business outcomes.
 
-## 🏢 Relevant Sectors & Stakeholders
+## 🏢 Relevant Sectors and Stakeholders
 Understanding customer attrition is vital across industries. This project, initially designed for the telecom sector, provides a scalable framework for churn analysis applicable to finance, retail, and healthcare. By leveraging data analytics and predictive modeling, businesses can proactively address churn, optimize retention strategies, and enhance customer lifetime value.
  
 ## 📘 Project Overview
@@ -34,7 +34,7 @@ This project focuses on Customer Churn Analysis for a telecom firm. It utilizes 
 -  **Identifying Churner Profiles** and areas for marketing interventions.
 -  **Predicting Customer Churn** using **Machine Learning (Random Forest)**.
 
-## 🧩 Key Metrics Used
+## 🧩 Key Metrics
 -	**Total Customers**
 -	**Total Churn & Churn Rate**
 -	**New Joiners**
@@ -297,7 +297,7 @@ Title Predicted Churners = "COUNT OF PREDICTED CHURNERS : " & COUNT(Predictions[
 
 
 
-### 5.🌲 Customer Churn Prediction Using Machine Learning (Random Forest)
+### 5. 🌲 Machine Learning (Random Forest)
 -	**Data Preparation** for the ML model.
 -	Installed necessary **Python libraries**.
 -	Imported data and performed **preprocessing**.
@@ -439,7 +439,7 @@ original_data = original_data[original_data['Customer_Status_Predicted'] == 1]
 original_data.to_csv(r"C:\yourpath\Predictions.csv", index=False)
 ```
 
-### 6.🪟 Power BI Visualization of Predicted Data
+### 6. 🪟 Power BI Visualization of Predicted Data
 -	Imported **predicted churn data** into SQL Server and Power BI.
 -	Created additional **DAX measures** to analyze predicted results.
 -	Designed a Churn Prediction Dashboard to visualize potential **churners and customer risk factors**.
