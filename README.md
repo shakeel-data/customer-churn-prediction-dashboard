@@ -223,14 +223,14 @@ Create View vw_JoinData as
 - After completing **data cleaning and exploration** using T-SQL in Microsoft SQL Server, the final dataset was stored as a saved **query/view in the database**.
 - This ensured a live, structured connection when **importing the data into Power BI using the native SQL Server connector**, maintaining **data accuracy and consistency** throughout the dashboard development process.
 
-### 3.📊 Power BI Data Transformation
+### 3. 📊 Power BI Data Transformation
 - Added new calculated columns in **prod_Churn**.
 - Created reference tables for:
       -	**Age Group Mapping**
       -	**Tenure Group Mapping**
       -	**Service Categories**
 
-### 4.🔢 Power BI Measures & Visualization
+### 4. 🔢 Power BI Measures and Visualization
 - Developed **DAX measures** for key performance indicators (KPIs).
 - Designed interactive dashboards to **analyze churn patterns** across various segments
 
@@ -265,7 +265,7 @@ a. Attribute >> Services
 b. Value >> Status
 
 
-### Summary page Measures
+### Summary Page Measures
 
 ```dax
 Total Customers = Count(prod_Churn[Customer_ID])
@@ -283,7 +283,7 @@ Total Churn = SUM(prod_Churn[Churn Status])
 Churn Rate = [Total Churn] / [Total Customers]
 ```
 
-### Churn Prediction -  page Measures
+### Churn Prediction -  Page Measures
 
 ```dax
 Count Predicted Churner = COUNT(Predictions[Customer_ID]) + 0
@@ -292,10 +292,6 @@ Count Predicted Churner = COUNT(Predictions[Customer_ID]) + 0
 ```dax
 Title Predicted Churners = "COUNT OF PREDICTED CHURNERS : " & COUNT(Predictions[Customer_ID])
 ```
-
-
-
-
 
 ### 5. 🌲 Machine Learning (Random Forest)
 -	**Data Preparation** for the ML model.
@@ -365,7 +361,7 @@ y = data['Customer_Status']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 ```
 
-### ▲ Training Random Foreat model
+### ▲ Training Random Foreat Model
 
 ```python
 # Initialize the Random Forest Classifier
@@ -375,7 +371,7 @@ rf_model = RandomForestClassifier(n_estimators=100, random_state=42)
 rf_model.fit(X_train, y_train)
 ```
 
-### Evaluate model
+### Evaluate Model
 ```python
 # Make predictions
 y_pred = rf_model.predict(X_test)
@@ -399,7 +395,7 @@ plt.ylabel('Feature Names')
 plt.show()
 ```
 
-### Use model for Prediction of new data
+### Use Model for Prediction of New Data
 ```python
 # Define the path to the Joiner Data Excel file
 file_path = r"C:\yourpath\Prediction_Data.xlsx"
