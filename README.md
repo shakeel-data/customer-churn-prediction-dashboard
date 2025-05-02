@@ -19,15 +19,17 @@ This project focuses on Customer Churn Analysis for a telecom firm. It utilizes 
 -  **Predicting Customer Churn** using **Machine Learning (RandomForest)**.
 
 ## 📁 Data Sources
-- Dataset
+- Data
   - <a href="https://github.com/Shakeel-Data/Churn-prediction-Dashboard/blob/main/Customer%20data.csv">csv</a>
   - <a href="https://github.com/Shakeel-Data/Churn-prediction-Dashboard/blob/main/Prediction%20data.xlsx">xlsx</a>
+- Prediction data
+  - <a href="">csv</a>
 - SQL
-  - <a href="https://github.com/Shakeel-Data/Churn-prediction-Dashboard/blob/main/SQL%20queries.docx">queries</a>
+  - <a href="https://github.com/shakeel-data/churn-prediction-dashboard/blob/main/customer_churn.sql">queries</a>
 - Power query
   - <a href="https://github.com/Shakeel-Data/Churn-prediction-Dashboard/blob/main/Power%20Query%20Transformation%20and%20Measures">DAX</a>
 - Python
-  - <a href="https://github.com/Shakeel-Data/Churn-prediction-Dashboard/blob/main/Python%20Codes%20for%20Machine%20learning%20-%20Random%20Forest.docx">codes</a>
+  - <a href="https://github.com/shakeel-data/churn-prediction-dashboard/blob/main/customer_churn_predictive_model.ipynb">codes</a>
 
 # 🪟 Dashboard
 ![Dashboard overview ](https://github.com/user-attachments/assets/a89377ad-0eb9-424f-8f1b-5aa93121f435)
