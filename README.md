@@ -8,7 +8,16 @@ Understanding customer attrition is vital across industries. This project, initi
  
 ## 📘 Project Overview
 This project focuses on Customer Churn Analysis for a telecom firm. It utilizes SQL for ETL, Power BI for data visualization and Machine Learning (Random Forest) to identify churn patterns, predict future churners, and provide actionable insights. While the project is specific to telecom, its methodologies can be applied across retail, finance, and healthcare industries to enhance customer retention strategies.
- 
+
+ ## 🎯 Key Objectives
+- **Visualizing and Analyzing Customer Data at different levels**:
+  -	Demographic (Age, Gender, Marital Status)
+  -	Geographic (State-wise churn rates)
+  -	Payment & Account Information (Contract Type, Payment Method)
+  -	Services Used (Internet, Security, Billing, etc.)
+-  **Identifying Churner Profiles** and areas for marketing interventions.
+-  **Predicting Customer Churn** using **Machine Learning (Random Forest)**.
+
 ## 📁 Data Sources
 - Dataset
   - <a href="https://github.com/Shakeel-Data/Churn-prediction-Dashboard/blob/main/Customer%20data.csv">csv</a>
@@ -23,22 +32,6 @@ This project focuses on Customer Churn Analysis for a telecom firm. It utilizes 
 # 🪟 Dashboard
 ![Dashboard overview ](https://github.com/user-attachments/assets/a89377ad-0eb9-424f-8f1b-5aa93121f435)
 ![Dashboard overview 2](https://github.com/user-attachments/assets/bb63d774-5693-4f5b-9ba1-8eb34347cb4e)
-
-
-## 🎯 Key Objectives
-- **Visualizing and Analyzing Customer Data at different levels**:
-  -	Demographic (Age, Gender, Marital Status)
-  -	Geographic (State-wise churn rates)
-  -	Payment & Account Information (Contract Type, Payment Method)
-  -	Services Used (Internet, Security, Billing, etc.)
--  **Identifying Churner Profiles** and areas for marketing interventions.
--  **Predicting Customer Churn** using **Machine Learning (Random Forest)**.
-
-## 🧩 Key Metrics
--	**Total Customers**
--	**Total Churn & Churn Rate**
--	**New Joiners**
--	**Churn Rate by Demographics, Payment Method, Tenure, and Contract Type**
 
 ## 🪜 Project Workflow
 ### 1. ETL Process in SQL Server
