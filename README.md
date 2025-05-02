@@ -7,7 +7,7 @@ Customer churn is one of the most significant challenges facing modern businesse
 Understanding customer attrition is vital across industries. This project, initially designed for the telecom sector, provides a scalable framework for churn analysis applicable to finance, retail, and healthcare. By leveraging data analytics and predictive modeling, businesses can proactively address churn, optimize retention strategies, and enhance customer lifetime value.
  
 ## 📘 Project Overview
-This project focuses on Customer Churn Analysis for a telecom firm. It utilizes SQL for ETL, Power BI for data visualization and Machine Learning (Random Forest) to identify churn patterns, predict future churners, and provide actionable insights. While the project is specific to telecom, its methodologies can be applied across retail, finance, and healthcare industries to enhance customer retention strategies.
+This project focuses on Customer Churn Analysis for a telecom firm. It utilizes SQL for ETL, Power BI for data visualization and Machine Learning (RandomForestClassifier) to identify churn patterns, predict future churners, and provide actionable insights. While the project is specific to telecom, its methodologies can be applied across retail, finance, and healthcare industries to enhance customer retention strategies.
 
  ## 🎯 Key Objectives
 - **Visualizing and Analyzing Customer Data at different levels**:
@@ -16,7 +16,7 @@ This project focuses on Customer Churn Analysis for a telecom firm. It utilizes 
   -	Payment & Account Information (Contract Type, Payment Method)
   -	Services Used (Internet, Security, Billing, etc.)
 -  **Identifying Churner Profiles** and areas for marketing interventions.
--  **Predicting Customer Churn** using **Machine Learning (Random Forest)**.
+-  **Predicting Customer Churn** using **Machine Learning (RandomForest)**.
 
 ## 📁 Data Sources
 - Dataset
@@ -310,18 +310,15 @@ import joblib
 ### Data Load
 
 ```python
-# Define the path to the Excel file
-file_path = r"C:\yourpath\Prediction_Data.xlsx"
-
-# Define the sheet name to read data from
-sheet_name = 'vw_ChurnData'
+# pip install openpyxl
 
 # Read the data from the specified sheet into a pandas DataFrame
-data = pd.read_excel(file_path, sheet_name=sheet_name)
+data = pd.read_excel("C:\yourpath\Prediction_Data.xlsx")
 
 # Display the first few rows of the fetched data
 print(data.head())
 ```
+![image](https://github.com/user-attachments/assets/7f4577f2-ea07-4526-a5dc-6359f0fd319b)
 
 ### Data Preprocessing
 ```python
@@ -336,7 +333,8 @@ columns_to_encode = [
     'Streaming_Music', 'Unlimited_Data', 'Contract', 'Paperless_Billing',
     'Payment_Method'
 ]
-
+```
+```python
 # Encode categorical variables except the target variable
 label_encoders = {}
 for column in columns_to_encode:
@@ -345,7 +343,8 @@ for column in columns_to_encode:
 
 # Manually encode the target variable 'Customer_Status'
 data['Customer_Status'] = data['Customer_Status'].map({'Stayed': 0, 'Churned': 1})
-
+```
+```python
 # Split data into features and target
 X = data.drop('Customer_Status', axis=1)
 y = data['Customer_Status']
@@ -354,7 +353,7 @@ y = data['Customer_Status']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 ```
 
-### ▲ Training Random Foreat Model
+### ▲ Training RandomForestClassifier Model
 
 ```python
 # Initialize the Random Forest Classifier
@@ -374,7 +373,10 @@ print("Confusion Matrix:")
 print(confusion_matrix(y_test, y_pred))
 print("\nClassification Report:")
 print(classification_report(y_test, y_pred))
+```
+![image](https://github.com/user-attachments/assets/39162bc5-fa01-4357-bdb0-953a40af9cb7)
 
+```python
 # Feature Selection using Feature Importance
 importances = rf_model.feature_importances_
 indices = np.argsort(importances)[::-1]
@@ -387,35 +389,43 @@ plt.xlabel('Relative Importance')
 plt.ylabel('Feature Names')
 plt.show()
 ```
+![image](https://github.com/user-attachments/assets/cb650b35-6b56-4061-8d54-0d7af87128e5)
 
 ### Use Model for Prediction of New Data
 ```python
 # Define the path to the Joiner Data Excel file
 file_path = r"C:\yourpath\Prediction_Data.xlsx"
-
+```
+```python
 # Define the sheet name to read data from
 sheet_name = 'vw_JoinData'
-
+```
+```python
 # Read the data from the specified sheet into a pandas DataFrame
 new_data = pd.read_excel(file_path, sheet_name=sheet_name)
 
 # Display the first few rows of the fetched data
 print(new_data.head())
+```
+![image](https://github.com/user-attachments/assets/12f45b3c-0d80-4383-9322-0edf416676a9)
 
+```python
 # Retain the original DataFrame to preserve unencoded columns
 original_data = new_data.copy()
 
 # Retain the Customer_ID column
 customer_ids = new_data['Customer_ID']
-
+```
+```python
 # Drop columns that won't be used for prediction in the encoded DataFrame
 new_data = new_data.drop(['Customer_ID', 'Customer_Status', 'Churn_Category', 'Churn_Reason'], axis=1)
 
 # Encode categorical variables using the saved label encoders
 for column in new_data.select_dtypes(include=['object']).columns:
     new_data[column] = label_encoders[column].transform(new_data[column])
-
-# Make predictions
+```
+### Make Predictions
+```python
 new_predictions = rf_model.predict(new_data)
 
 # Add predictions to the original DataFrame
@@ -423,8 +433,9 @@ original_data['Customer_Status_Predicted'] = new_predictions
 
 # Filter the DataFrame to include only records predicted as "Churned"
 original_data = original_data[original_data['Customer_Status_Predicted'] == 1]
-
-# Save the results
+```
+### Save the results
+```python
 original_data.to_csv(r"C:\yourpath\Predictions.csv", index=False)
 ```
 
@@ -440,7 +451,7 @@ original_data.to_csv(r"C:\yourpath\Predictions.csv", index=False)
 
 ## ⚙️ Technologies and Tools
 - **Microsoft SQL Server** (Database & ETL)
-- **Jupyter Notebook** (Interactive environment for coding and presenting analysis)
+- **Visual Studio Code** (Interactive environment for coding and presenting analysis)
 - **Python** (pandas, numpy, matplotlib, scikit-learn, joblib) 
 - **Machine Learning Algorithm** (RandomForest)
 - **Microsoft Power BI Desktop** (Data Transformation & Visualization)
