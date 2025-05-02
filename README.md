@@ -440,11 +440,11 @@ original_data.to_csv(r"C:\yourpath\Predictions.csv", index=False)
 
 ## ⚙️ Technologies and Tools
 - **Microsoft SQL Server** (Database & ETL)
-- **DAX** (Power BI Calculations)
-- **Microsoft Power BI Desktop** (Data Transformation & Visualization)
 - **Jupyter Notebook** (Interactive environment for coding and presenting analysis)
 - **Python** (pandas, numpy, matplotlib, scikit-learn, joblib) 
-- **Machine Learning Algorithm** (Random Forest)
+- **Machine Learning Algorithm** (RandomForest)
+- **Microsoft Power BI Desktop** (Data Transformation & Visualization)
+- **DAX Measures** (Power BI Calculations)
 
 ## 🔚➡️ Conclusion & Next Steps
 This Churn Analysis Dashboard provides a data-driven foundation for understanding customer attrition and its underlying causes. The insights reveal critical risk factors related to demographics, service preferences, contract types, and regional trends. Addressing these challenges through proactive retention strategies, service enhancements, and personalized engagement can significantly improve customer loyalty and reduce churn. By integrating SQL, Power BI, and Machine Learning, it provides a comprehensive solution for customer retention strategies.The methodology and tools used here can be extended to various industries to drive data-driven decisions and enhance customer experience.
