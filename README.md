@@ -454,7 +454,7 @@ original_data.to_csv(r"C:\yourpath\Predictions.csv", index=False)
 ## ⚙️ Technologies and Tools
 - **Microsoft SQL Server** (Database & ETL)
 - **Visual Studio Code** (Interactive environment for coding and presenting analysis)
-- **Python** ```pandas```, ```numpy, matplotlib, scikit-learn, joblib``` 
+- **Python** ```pandas```, ```numpy```, ```matplotlib```, ```scikit-learn```, ```joblib``` 
 - **Machine Learning Algorithm** ```RandomForestClassifier ```
 - **Microsoft Power BI Desktop** (Data Transformation & Visualization)
 - **DAX Measures** (Custom calculations in Power BI reports)
