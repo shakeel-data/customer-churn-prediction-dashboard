@@ -1,4 +1,6 @@
-# 👥 Data-Driven Customer Churn Insights Project | SQL + Power BI + Machine Learning
+# 👥 Customer Churn Insights Project | SQL server + Power BI + RandomForest
+![image](https://github.com/user-attachments/assets/d1c08730-ca60-42d2-9604-5d0a0366ffa2)
+
 Customer churn is one of the most significant challenges facing modern businesses. As markets become increasingly saturated, understanding why customers leave and more importantly, how to retain them has never been more critical. Churn analysis provides a data-driven approach to tackling this issue by uncovering behavioural trends and service-related factors that influence customer decisions. By integrating predictive modelling and actionable insights, organizations can shift from reactive responses to proactive engagement, ensuring stronger customer relationships and improved business outcomes.
 
 ## 🏢 Relevant Sectors & Stakeholders
@@ -7,7 +9,7 @@ Understanding customer attrition is vital across industries. This project, initi
 ## 📘 Project Overview
 This project focuses on Customer Churn Analysis for a telecom firm. It utilizes SQL for ETL, Power BI for data visualization and Machine Learning (Random Forest) to identify churn patterns, predict future churners, and provide actionable insights. While the project is specific to telecom, its methodologies can be applied across retail, finance, and healthcare industries to enhance customer retention strategies.
  
-## 📁 Data resources used
+## 📁 Data Sources
 - Dataset
   - <a href="https://github.com/Shakeel-Data/Churn-prediction-Dashboard/blob/main/Customer%20data.csv">csv</a>
   - <a href="https://github.com/Shakeel-Data/Churn-prediction-Dashboard/blob/main/Prediction%20data.xlsx">xlsx</a>
@@ -23,15 +25,13 @@ This project focuses on Customer Churn Analysis for a telecom firm. It utilizes 
 ![Dashboard overview 2](https://github.com/user-attachments/assets/bb63d774-5693-4f5b-9ba1-8eb34347cb4e)
 
 
-## 🎯 Project Goals
+## 🎯 Key Objectives
 - **Visualizing and Analyzing Customer Data at different levels**:
   -	Demographic (Age, Gender, Marital Status)
   -	Geographic (State-wise churn rates)
   -	Payment & Account Information (Contract Type, Payment Method)
   -	Services Used (Internet, Security, Billing, etc.)
-
 -  **Identifying Churner Profiles** and areas for marketing interventions.
-   
 -  **Predicting Customer Churn** using **Machine Learning (Random Forest)**.
 
 ## 🧩 Key Metrics Used
@@ -48,8 +48,6 @@ This project focuses on Customer Churn Analysis for a telecom firm. It utilizes 
    -	Created **views in SQL Server** to integrate with Power BI.
 
 ```sql
-                                     ---🟢 Data Exploration ---
-
 -- Checking distinct values
 
 SELECT Gender, Count(Gender) as TotalCount,
@@ -64,7 +62,6 @@ SELECT Customer_Status, Count(Customer_Status) as TotalCount, Sum(Total_Revenue)
 Sum(Total_Revenue) / (Select sum(Total_Revenue) from stg_Churn) * 100  as RevPercentage
 from stg_Churn
 Group by Customer_Status
-
 ```
 ![image](https://github.com/user-attachments/assets/5d78791b-a548-479b-addd-1f40a53c5a7e)
 
@@ -74,13 +71,10 @@ Count(State) * 1.0 / (Select Count(*) from stg_Churn)  as Percentage
 from stg_Churn
 Group by State
 Order by Percentage desc
-
 ```
 ![image](https://github.com/user-attachments/assets/c36183c3-639a-412a-90c1-80c6396399cc)
 
 ```sql
-                                      ---🟡 Data analysis ---
-
 -- Checking nulls
 
 SELECT 
@@ -117,13 +111,11 @@ SELECT
     SUM(CASE WHEN Churn_Category IS NULL THEN 1 ELSE 0 END) AS Churn_Category_Null_Count,
     SUM(CASE WHEN Churn_Reason IS NULL THEN 1 ELSE 0 END) AS Churn_Reason_Null_Count
 FROM stg_Churn;
-
 ```
 
 ![image](https://github.com/user-attachments/assets/6e4c57fc-fd69-4a5b-979d-6b253a4eeaf0)
 
 ```sql
-
 --Monthly Revenue by State
 
 SELECT
@@ -132,12 +124,10 @@ SELECT
 FROM stg_Churn
 GROUP BY State
 ORDER BY Monthly_Revenue DESC;
-
 ```
 ![image](https://github.com/user-attachments/assets/66be6315-7100-4e1a-8b97-5c952322e8ab)
 
 ```sql
-
 -- Churned Customers by Payment Method
 
 SELECT 
@@ -146,15 +136,11 @@ SELECT
      SUM(CASE WHEN Customer_Status = 'Churned' THEN 1 ELSE 0 END) AS Churned_Customers
 FROM stg_Churn
 GROUP BY Payment_Method;
-
 ```
 ![image](https://github.com/user-attachments/assets/96c1a600-e27f-47a2-b97c-7a127c105c74)
 
 
 ```sql
-
-                                        ---🔴 Data exploratory ---
-
 CREATE TABLE prod_Churn
 
 -- Removing null and inserting new data into prod_churn
@@ -195,11 +181,9 @@ SELECT
 
 INTO [db_Churn].[dbo].[prod_Churn]
 FROM [db_Churn].[dbo].[stg_Churn];
-
 ```
 
 ```sql
-
 -- Top 5 States with Highest Churn Rate
 SELECT TOP 5
     State,
@@ -209,12 +193,10 @@ SELECT TOP 5
 FROM stg_Churn
 GROUP BY State
 ORDER BY Churn_Rate DESC;
-
 ```
 ![image](https://github.com/user-attachments/assets/228cab1c-6e7b-4940-8910-f2bf773652c8)
 
 ```sql
-
 -- Churn Reason Count Breakdown
 
 SELECT 
@@ -224,12 +206,10 @@ FROM Stg_churn
 WHERE Customer_Status = 'Churned'
 GROUP BY Churn_Reason
 ORDER BY Count DESC;
-
 ```
 ![image](https://github.com/user-attachments/assets/6e6d3dd2-a18d-4cec-8d71-51814085e640)
 
 ```sql
-
 -- Creating views for Power BI
 
 Create View vw_ChurnData as
@@ -237,24 +217,24 @@ Create View vw_ChurnData as
 
 Create View vw_JoinData as
 	select * from prod_Churn where Customer_Status = 'Joined'
-
 ```
+
 ### 2. Data Integration
 - After completing **data cleaning and exploration** using T-SQL in Microsoft SQL Server, the final dataset was stored as a saved **query/view in the database**.
 - This ensured a live, structured connection when **importing the data into Power BI using the native SQL Server connector**, maintaining **data accuracy and consistency** throughout the dashboard development process.
 
-### 3. Power BI Data Transformation
--  Added new calculated columns in **prod_Churn**.
--	Created reference tables for:
+### 3.📊 Power BI Data Transformation
+- Added new calculated columns in **prod_Churn**.
+- Created reference tables for:
       -	**Age Group Mapping**
       -	**Tenure Group Mapping**
       -	**Service Categories**
 
-### 4. Power BI Measures & Visualization
--	Developed **DAX measures** for key performance indicators (KPIs).
--	Designed interactive dashboards to **analyze churn patterns** across various segments
+### 4.🔢 Power BI Measures & Visualization
+- Developed **DAX measures** for key performance indicators (KPIs).
+- Designed interactive dashboards to **analyze churn patterns** across various segments
 
-### power Query Transformations 
+### 🔗 power Query Transformations 
 
 ```dax
 -- Add a new column in prod_Churn
@@ -266,7 +246,7 @@ Churn Status = if [Customer_Status] = "Churned" then 1 else 0
 Monthly Charge Range = if [Monthly_Charge] < 20 then "< 20" else if [Monthly_Charge] < 50 then "20-50" else if [Monthly_Charge] < 100 then "50-100" else "> 100"
 ```
 
-### Creating a new table reference for mapping _age_group
+### 田 Creating a new table reference for mapping _age_group
 
 ```dax
 - Keep only Age column and remove duplicates
@@ -317,20 +297,14 @@ Title Predicted Churners = "COUNT OF PREDICTED CHURNERS : " & COUNT(Predictions[
 
 
 
-### 5. Customer Churn Prediction Using Machine Learning (Random Forest)
+### 5.🌲 Customer Churn Prediction Using Machine Learning (Random Forest)
 -	**Data Preparation** for the ML model.
 -	Installed necessary **Python libraries**.
 -	Imported data and performed **preprocessing**.
 -	Trained a **Random Forest Model** to predict churn.
 -	Used the model to **predict future churners**.
 
-### Installing Libraries
-
-```python
-pip install pandas, pandas, matplotlib, seaborn, scikit-learn, joblib
- ```
-
-### Importing Libraries
+### Importing Dependencies
 
 ```python
 import pandas as pd
@@ -391,7 +365,8 @@ y = data['Customer_Status']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 ```
 
-### Training Random Foreat model
+### ▲ Training Random Foreat model
+
 ```python
 # Initialize the Random Forest Classifier
 rf_model = RandomForestClassifier(n_estimators=100, random_state=42)
@@ -464,7 +439,7 @@ original_data = original_data[original_data['Customer_Status_Predicted'] == 1]
 original_data.to_csv(r"C:\yourpath\Predictions.csv", index=False)
 ```
 
-### 6. Power BI Visualization of Predicted Data
+### 6.🪟 Power BI Visualization of Predicted Data
 -	Imported **predicted churn data** into SQL Server and Power BI.
 -	Created additional **DAX measures** to analyze predicted results.
 -	Designed a Churn Prediction Dashboard to visualize potential **churners and customer risk factors**.
@@ -474,31 +449,18 @@ original_data.to_csv(r"C:\yourpath\Predictions.csv", index=False)
 -	**Data-Driven Decision Making**  : Visualization and predictive analytics help tailor marketing strategies.
 -	**Improved Revenue Management**  : Understanding churn trends can enhance customer loyalty programs and pricing models.
 
-## ⚙️ Software & Frameworks
-- **SQL** **server** (Database & ETL)
+## ⚙️ Technologies and Tools
+- **Microsoftb SQL Server** (Database & ETL)
 - **DAX** (Power BI Calculations)
-- **Power BI Desktop** (Data Transformation & Visualization)
+- **Microsoft Power BI Desktop** (Data Transformation & Visualization)
 - **Jupyter Notebook** (Interactive environment for coding and presenting analysis)
-- **Python** (Pandas, NumPy, Matplotlib, Scikit-learn) 
+- **Python** (pandas, numpy, matplotlib, scikit-learn, joblib) 
 - **Machine Learning Algorithm** (Random Forest)
 
 ## 🔚➡️ Conclusion & Next Steps
 This Churn Analysis Dashboard provides a data-driven foundation for understanding customer attrition and its underlying causes. The insights reveal critical risk factors related to demographics, service preferences, contract types, and regional trends. Addressing these challenges through proactive retention strategies, service enhancements, and personalized engagement can significantly improve customer loyalty and reduce churn. By integrating SQL, Power BI, and Machine Learning, it provides a comprehensive solution for customer retention strategies.The methodology and tools used here can be extended to various industries to drive data-driven decisions and enhance customer experience.
 
-This project underscores the value of data-driven decision-making in driving business growth. Future developments may focus on:
-  -	Implement personalized retention offers for high-risk customers.
-  -	Improve contract structures to encourage long-term commitments.
-  -	Deploy real-time monitoring and alerts for early churn indicators.
-
-
-
-
-
-
-   
-
-
-
-
-
-
+### Next Steps
+- Implement personalized retention offers for high-risk customers.
+- Improve contract structures to encourage long-term commitments.
+- Deploy real-time monitoring and alerts for early churn indicators.
