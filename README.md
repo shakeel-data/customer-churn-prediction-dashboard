@@ -7,7 +7,7 @@ Customer churn is one of the most significant challenges facing modern businesse
 Understanding customer attrition is vital across industries. This project, initially designed for the telecom sector, provides a scalable framework for churn analysis applicable to finance, retail, and healthcare. By leveraging data analytics and predictive modeling, businesses can proactively address churn, optimize retention strategies, and enhance customer lifetime value.
  
 ## 📘 Project Overview
-This project focuses on **Customer Churn Analysis for a telecom firm.** It utilizes SQL for ETL, Power BI for data visualization and Machine Learning (RandomForestClassifier) to identify churn patterns, predict future churners, and provide actionable insights. While the project is specific to telecom, its methodologies can be applied across retail, finance, and healthcare industries to enhance customer retention strategies.
+This project focuses on **Customer Churn Analysis for a telecom firm.** It utilizes SQL for **ETL, Power BI for data visualization and Machine Learning (RandomForestClassifier) to identify churn patterns, predict future churners, and provide actionable insights.** While the project is specific to telecom, its methodologies can be applied across retail, finance, and healthcare industries to enhance customer retention strategies.
 
  ## 🎯 Key Objectives
 - **Visualizing and Analyzing Customer Data at different levels**:
@@ -461,7 +461,7 @@ original_data.to_csv(r"C:\yourpath\Predictions.csv", index=False)
 - **DAX Measures** – Custom calculations in Power BI reports
 
 ## 🔚➡️ Conclusion & Next Steps	
-This Churn Analysis Dashboard provides a data-driven foundation for understanding customer attrition and its underlying causes. The insights reveal critical risk factors related to demographics, service preferences, contract types, and regional trends. Addressing these challenges through proactive retention strategies, service enhancements, and personalized engagement can significantly improve customer loyalty and reduce churn. By integrating SQL, Power BI, and Machine Learning, it provides a comprehensive solution for customer retention strategies.The methodology and tools used here can be extended to various industries to drive data-driven decisions and enhance customer experience.
+This Churn Analysis Dashboard provides a **data-driven foundation for understanding customer attrition and its underlying causes.** The insights reveal critical risk factors related to demographics, service preferences, contract types, and regional trends. Addressing these challenges through proactive retention strategies, service enhancements, and personalized engagement can significantly improve customer loyalty and reduce churn. By integrating SQL, Power BI, and Machine Learning, it provides a comprehensive solution for customer retention strategies.The methodology and tools used here can be extended to various industries to drive data-driven decisions and enhance customer experience.
 
 ### Next Steps:
 - Implement **personalized retention** offers for high-risk customers.
