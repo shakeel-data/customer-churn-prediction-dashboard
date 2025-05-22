@@ -461,7 +461,8 @@ original_data.to_csv(r"C:\yourpath\Predictions.csv", index=False)
 - **DAX Measures** – Custom calculations in Power BI reports
 
 ## 🔚➡️ Conclusion & Next Steps	
-This Churn Analysis Dashboard provides a **data-driven foundation for understanding customer attrition and its underlying causes.** The insights reveal critical risk factors related to demographics, service preferences, contract types, and regional trends. Addressing these challenges through proactive retention strategies, service enhancements, and personalized engagement can significantly improve customer loyalty and reduce churn. By integrating **SQL, Power BI, and Machine Learning, it provides a comprehensive solution for customer retention strategies.** The methodology and tools used here can be extended to various industries to drive data-driven decisions and enhance customer experience.
+This Churn Analysis Dashboard provides a **data-driven foundation for understanding customer attrition and its underlying causes.** The insights reveal critical risk factors related to demographics, service preferences, contract types, and regional trends. Addressing these challenges through proactive retention strategies, service enhancements, and personalized engagement can significantly improve customer loyalty and reduce churn. By integrating **SQL, Power BI, and Machine Learning, it provides a comprehensive solution for customer retention strategies.** The methodology and tools used here can be extended to various industries to drive **data-driven decisions and enhance customer experience.**
+
 
 ### Next Steps:
 - Implement **personalized retention** offers for high-risk customers.
