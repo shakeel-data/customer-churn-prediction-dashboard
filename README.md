@@ -7,7 +7,7 @@ Customer churn is one of the most significant challenges facing modern businesse
 Understanding customer attrition is vital across industries. This project, initially designed for the telecom sector, provides a scalable framework for churn analysis applicable to finance, retail, and healthcare. By leveraging data analytics and predictive modeling, businesses can proactively address churn, optimize retention strategies, and enhance customer lifetime value.
  
 ## 📘 Project Overview
-This project focuses on **Customer Churn Analysis for a telecom firm.** It utilizes SQL for **ETL, Power BI for data visualization and Machine Learning (RandomForestClassifier) to identify churn patterns, predict future churners, and provide actionable insights.** While the project is specific to telecom, its methodologies can be applied across retail, finance, and healthcare industries to enhance customer retention strategies.
+This project focuses on **Customer Churn Analysis for a telecom firm.** It utilizes **SQL for** **ETL, Machine Learning (RandomForestClassifier) to identify churn patterns, predict future churners, Power BI for data visualization and provide actionable insights.** While the project is specific to telecom, its methodologies can be applied across retail, finance, and healthcare industries to enhance customer retention strategies.
 
  ## 🎯 Key Objectives
 - **Visualizing and Analyzing Customer Data at different levels**:
