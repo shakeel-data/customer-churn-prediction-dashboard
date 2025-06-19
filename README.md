@@ -36,7 +36,7 @@ This project focuses on **Customer Churn Analysis for a telecom firm.** It utili
 ![Dashboard overview 2](https://github.com/user-attachments/assets/bb63d774-5693-4f5b-9ba1-8eb34347cb4e)
 
 ## 🪜 Project Workflow
-### 1. ETL Process in SQL Server
+### 1. 🧩 ETL Process in SQL Server
    -	Created a **database and imported CSV files** into SQL Server using the Import Wizard.
    -	Performed **data exploration** to check distinct values and nulls.
    -	Cleaned data by **removing null values** and inserted it into the **production table**.
