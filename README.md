@@ -214,7 +214,7 @@ Create View vw_JoinData as
 	select * from prod_Churn where Customer_Status = 'Joined'
 ```
 
-### 2. Data Integration
+### 2. 🗃️ Data Integration
 - After completing **data cleaning and exploration** using T-SQL in Microsoft SQL Server, the final dataset was stored as a saved **query/view in the database**.
 - This ensured a live, structured connection when **importing the data into Power BI using the native SQL Server connector**, maintaining **data accuracy and consistency** throughout the dashboard development process.
 
