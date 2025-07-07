@@ -449,7 +449,7 @@ original_data.to_csv(r"C:\yourpath\Predictions.csv", index=False)
 ## 💼 Business Outcomes
 -	**Proactive Customer Retention:** Identifying high-risk customers allows businesses to take preventive measures to reduce churn.
 -	**Data-Driven Decision Making:** Visualization and predictive analytics help tailor marketing strategies.
--	**Improved Revenue Management**  : Understanding churn trends can enhance customer loyalty programs and pricing models.
+-	**Improved Revenue Management:** Understanding churn trends can enhance customer loyalty programs and pricing models.
 
 ## ⚙️ Technologies and Tools
 - **Microsoft SQL Server** – Database management and ETL operations
