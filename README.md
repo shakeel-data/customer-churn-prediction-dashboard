@@ -457,7 +457,7 @@ original_data.to_csv(r"C:\yourpath\Predictions.csv", index=False)
 - **Python** – Data manipulation, model building, and analysis
   - Libraries: ```pandas```, ```numpy```, ```matplotlib```, ```scikit-learn```, ```joblib``` 
 - **Machine Learning Algorithm:** ```RandomForestClassifier ```
-- **Microsoft Power BI Desktop** – Data Transformation and Visualization 
+- **Microsoft Power BI Desktop** – Data transformation and Visualization 
 - **DAX Measures** – Custom calculations in Power BI reports
 
 ## 🔚➡️ Conclusion & Next Steps	
