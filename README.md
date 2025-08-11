@@ -16,7 +16,7 @@ This project focuses on **Customer Churn Analysis for a telecom firm.** It utili
   -	Payment & Account Information (Contract Type, Payment Method)
   -	Services Used (Internet, Security, Billing, etc.)
 -  **Identifying Churner Profiles** and areas for marketing interventions.
--  **Predicting Customer Churn** using **Machine Learning (RandomForest)**.
+-  **Predicting Customer Churn** using **Machine Learning (RandomForest).**
 
 ## 📁 Data Sources
 - Data
